@@ -1,0 +1,35 @@
+{
+  "name": "voltide",
+  "displayName": "VoltIDE",
+  "version": "0.0.1",
+  "description": "Syntax highlighting for the VoltIDE scripting language",
+  "publisher": "lilrex",
+  "author": "lilrex",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tahaadil123/Voltide"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": ["Programming Languages"],
+  "keywords": ["syntax", "highlighting", "voltide", "scripting", "language"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "voltide",
+        "aliases": ["VoltIDE", "voltide"],
+        "extensions": [".vlt", ".voltide", ".vtd"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "voltide",
+        "scopeName": "source.voltide",
+        "path": "./syntaxes/voltide.tmLanguage.json"
+      }
+    ]
+  }
+}
